@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+:root {
+  --color-1: #fff;
+  --color-2: #000;
+  /* color: var(--color-) */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+    /* font-family: "Ubuntu", sans-serif; */
+    /* font-family: "Oswald", sans-serif; */
+    /* font-family: "Roboto Mono", monospace; */
+    /* font-family: "Roboto Condensed", sans-serif; */
+    /* font-family: "Lato", sans-serif; */
+    /* font-family: "Montserrat", sans-serif; */
+    /* font-family: "Open Sans", sans-serif; */
+    /* font-family: "Roboto", sans-serif; */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #e0e0e0;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo .brand {
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+}
+
+.logo .highlight {
+  color: orange;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 600px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 17px;
+  border-right: 1px solid #ddd;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  font-size: 14px;
+  color: #444;
+}
+
+.dropdown:hover {
+  background-color: #e0e0e0;
+}
+
+.dropdown .arrow {
+  font-size: 20px;
+  color: #666;
+  margin-left: 4px;
+}
+
+.search-input-wrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 20px;
+  font-size: 17px;
+  color: #aaa;
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 10px 10px 55px;
+  border: none;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 24px;
+  color: #777;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 24px;
+  color: #666;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.icon:hover {
+  color: #007bff;
+  transform: scale(1.1);
+}
+
+.avatar-img {
+  background-image: url("/assets/avatar.png");
+  background-position: center;
+  background-size: cover;
+  background-color: red;
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+}
+
+.star-dropdown {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #fdfdfd;
+  width: 60px;
+  height: 32px; 
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.star-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-size: 16px;
+  color: #888;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.star-icon:hover {
+  background-color: #e6e6e6;
+  color: #333;
+}
+
+.divider {
+  width: 1px;
+  height: 100%;
+  background-color: #ccc;
+}
+
+.dropdown-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-size: 14px;
+  color: #888;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  .search-container {
+      margin: 10px 0;
+  }
+
+  .icons {
+      justify-content: center;
+      gap: 10px;
+  }
+}
