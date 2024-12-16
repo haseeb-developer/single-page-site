@@ -47,11 +47,11 @@
             </div>
 
             <div class="icon">
-                <i class="fa-solid fa-question-circle"></i>
+                <i class="fa-solid fa-question"></i>
             </div>
 
             <div class="icon">
-                <i class="fa-solid fa-cog"></i>
+                <i class="fa-solid fa-gear"></i>
             </div>
 
             <div class="icon">
@@ -86,26 +86,31 @@
 
     <div class="bottom-line"></div>
 
-    <section class="user-details">
-        <div class="user-info">
-            <div class="username-crown">
-                <i class="fa-solid fa-crown"></i>
-            </div>
-            <div class="user-location">
-                <h4>Opportunity</h4>
-                <h2>Dickenson ABC-New Customer-12/2021</h2>
+    <div class="user-main">
+        <div class="container">
+            <div class="user-details">
+                <div class="user-info">
+                    <div class="username-crown">
+                        <i class="fa-solid fa-crown"></i>
+                    </div>
+                    <div class="user-location">
+                        <h4>Opportunity</h4>
+                        <h2>Dickenson ABC-New Customer-12/2021</h2>
+                    </div>
+                </div>
+                <div class="detail-buttons">
+                    <button class="user-follow"><i class="fa-solid fa-plus"></i></li> Follow</button>
+                    <div class="group-cms-btns">
+                        <button class="cms-btn1">Edit</button>
+                        <button>New Note</button>
+                        <button>Clone</button>
+                        <button class="cms-btn2"><i class="fa-solid fa-caret-down"></i></li></button>
+                    </div>
+                </div>
+                </section>
             </div>
         </div>
-        <div class="detail-buttons">
-            <button class="user-follow"><i class="fa-solid fa-plus"></i></li> Follow</button>
-            <div class="group-cms-btns">
-                <button class="cms-btn1">Edit</button>
-                <button>New Note</button>
-                <button>Clone</button>
-                <button class="cms-btn2"><i class="fa-solid fa-caret-down"></i></li></button>
-            </div>
-        </div>
-    </section>
+    </div>
 
     <section class="account-status">
         <div class="container">
@@ -120,7 +125,7 @@
                 </div>
                 <div class="status-item">
                     <p>Amount</p>
-                    <h4>3/9/2022</h4>
+                    <h4></h4>
                 </div>
                 <div class="status-item">
                     <p>Opportunity Owner</p>
@@ -199,18 +204,131 @@
             </div>
 
             <div id="details" class="tab-content active">
-                <h3>Details</h3>
-                <p>This is the content for the Details tab. It includes all the detailed information you need.</p>
+                <div class="form-container">
+                    <div class="form-container">
+                        <div class="form-row">
+                            <div class="field-group">
+                                <label for="owner" class="field-label">Opportunity Owner</label>
+                                <div class="input-with-icon">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-trophy"></i>
+                                    </span>
+                                    <input type="text" id="owner" class="input-field" value="Mike Murphy">
+                                    <i class="fa-solid fa-pencil-alt edit-icon"></i>
+                                </div>
+                            </div>
+
+                            <div class="field-group">
+                                <label for="amount" class="field-label">Amount</label>
+                                <div class="input-with-icon">
+                                    <input type="text" id="amount" class="input-placeholder" placeholder="">
+                                    <i class="fa-solid fa-pencil-alt edit-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="field-group">
+                                <label for="private" class="field-label">Private</label>
+                                <div class="input-with-border">
+                                    <input type="checkbox" id="private" class="checkbox">
+                                </div>
+                            </div>
+
+
+                            <div class="field-group">
+                                <label for="expected-revenue" class="field-label">Expected Revenue</label>
+                                <div class="input-with-icon">
+                                    <input type="text" id="expected-revenue" class="input-placeholder" placeholder="">
+                                    <i class="fa-solid fa-pencil-alt edit-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="field-group">
+                                <label for="amount" class="field-label">Opportunity Name</label>
+                                <div class="input-with-icon">
+                                    <input type="text" id="amount" class="input-placeholder" placeholder="">
+                                    <i class="fa-solid fa-pencil-alt edit-icon"></i>
+                                </div>
+                            </div>
+
+                            <div class="field-group">
+                                <label for="amount" class="field-label">Close Date</label>
+                                <div class="input-with-icon">
+                                    <input type="text" id="amount" class="input-placeholder" placeholder="">
+                                    <i class="fa-solid fa-pencil-alt edit-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="field-group">
+                                <label for="amount" class="field-label">Account Name</label>
+                                <div class="input-with-icon">
+                                    <input type="text" id="amount" class="input-placeholder" placeholder="">
+                                    <i class="fa-solid fa-pencil-alt edit-icon"></i>
+                                </div>
+                            </div>
+
+                            <div class="field-group">
+                                <label for="amount" class="field-label">Name</label>
+                                <div class="input-with-icon">
+                                    <input type="text" id="amount" class="input-placeholder" placeholder="">
+                                    <i class="fa-solid fa-pencil-alt edit-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="field-group">
+                                <label for="amount" class="field-label">Type</label>
+                                <div class="input-with-icon">
+                                    <input type="text" id="amount" class="input-placeholder" placeholder="">
+                                    <i class="fa-solid fa-pencil-alt edit-icon"></i>
+                                </div>
+                            </div>
+
+                            <div class="field-group">
+                                <label for="amount" class="field-label">Stage</label>
+                                <div class="input-with-icon">
+                                    <input type="text" id="amount" class="input-placeholder" placeholder="">
+                                    <i class="fa-solid fa-pencil-alt edit-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="field-group">
+                                <label for="amount" class="field-label">Lead Source</label>
+                                <div class="input-with-icon">
+                                    <input type="text" id="amount" class="input-placeholder" placeholder="">
+                                    <i class="fa-solid fa-pencil-alt edit-icon"></i>
+                                </div>
+                            </div>
+
+                            <div class="field-group">
+                                <label for="amount" class="field-label">Probability (%)</label>
+                                <div class="input-with-icon">
+                                    <input type="text" id="amount" class="input-placeholder" placeholder="">
+                                    <i class="fa-solid fa-pencil-alt edit-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
             </div>
             <div id="related" class="tab-content">
                 <h3>Related</h3>
-                <p>This is the content for the Related tab. It shows relevant information related to the topic.</p>
+                <p>Description of Related</p>
             </div>
             <div id="chatter" class="tab-content">
                 <h3>Chatter</h3>
-                <p>This is the content for the Chatter tab. It includes discussions, comments, and feedback.</p>
+                <p>Description of Chatter</p>
             </div>
-
         </div>
     </section>
 
