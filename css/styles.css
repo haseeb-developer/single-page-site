@@ -63,6 +63,8 @@ header {
   overflow: hidden;
 }
 
+
+
 .dropdown {
   display: flex;
   align-items: center;
@@ -206,9 +208,6 @@ header {
   }
 }
 
-.dropdown-bar {
-  padding: 0 10px;
-}
 
 .bottom-line {
   background-image: url(/assets/bottom-line.png);
@@ -219,6 +218,7 @@ header {
   height: 20px;
   margin: 0 auto;
 }
+
 
 .dropdown-bar ul {
   display: flex;
@@ -231,7 +231,8 @@ header {
   cursor: pointer;
   font-weight: 500;
   gap: 10px;
-  font-size: 11px;
+  font-size: 14px;
+  white-space: nowrap;
   letter-spacing: 0.1px;
   background-color: transparent;
   align-items: center;
@@ -399,12 +400,15 @@ header {
 }
 
 .info-link ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   list-style: none;
   font-size: 14px;
 }
 
 .info-link ul li a {
-  color: #333;
+  color: var(--color-3);
   transition: .2s ease-in-out;
   display: flex;
   align-items: center;
@@ -414,6 +418,66 @@ header {
 
 .info-link ul li a:hover {
   color: var(--color-3);
+}
+
+.user-icon-person {
+  color: #947262;
+}
+
+.link-icon1 {
+  background-color: #fef2c7;
+  padding: 5px;
+  color: var(--color-1);
+  font-size: 11px;
+  border-radius: 5px;
+}
+
+.link-icon2 {
+  color: var(--color-1);
+  background-color: #b5ac9e;
+  padding: 5px;
+  font-size: 9px;
+  border-radius: 5px;
+}
+
+.link-icon3 {
+  color: #fff;
+  background-color: #a89e85;
+  padding: 5px;
+  font-size: 9px;
+  border-radius: 5px;
+}
+
+.link-icon4 {
+  color: #fff;
+  background-color: #8186e2;
+  padding: 5px;
+  font-size: 9px;
+  border-radius: 5px;
+}
+
+.link-icon5 {
+  color: #fff;
+  background-color: #4ea591;
+  padding: 5px;
+  font-size: 9px;
+  border-radius: 5px;
+}
+
+.link-icon6 {
+  color: #fff;
+  background-color: #f8b86d;
+  padding: 5px;
+  font-size: 9px;
+  border-radius: 5px;
+}
+
+.link-icon7 {
+  color: #fff;
+  background-color: #8dbb65;
+  padding: 5px;
+  font-size: 9px;
+  border-radius: 5px;
 }
 
 .bottom-line-v2 {
@@ -449,6 +513,8 @@ header {
   transition: .3s ease-in-out;
 }
 
+
+
 .status-item a:hover {
   color: #082859;
 }
@@ -464,6 +530,8 @@ header {
   max-width: 150px;       
   vertical-align: middle;    
 }
+
+
 
 
 .breadcrumbs {
@@ -648,9 +716,46 @@ header {
   align-items: center;
   border-bottom: 1px solid #ccc;
   background-color: #f8f8f8;
-  padding-left: 5px;
   position: relative;
 }
+
+#owner  {
+  color: var(--color-3);
+  font-family: 'Poppins', sans-serif;
+  text-decoration: underline;
+  font-weight: 500;
+  padding-left: 4px;
+  font-size: 16px;
+}
+
+#amount {
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+#account {
+  color: var(--color-3);
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+#type {
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+#probability,
+#stage,
+#close {
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
 
 .input-with-icon .icon {
   margin-right: 5px;
@@ -662,7 +767,7 @@ header {
   border: none;
   background: transparent;
   flex: 1;
-  padding: 5px 0;
+  padding: 10px 0;
   font-size: 14px;
   outline: none;
 }
@@ -673,6 +778,21 @@ header {
   color: #888;
   font-size: 14px;
   cursor: pointer;
+}
+
+.input-with-border {
+  position: relative;
+}
+
+.check-edit {
+  position: absolute;
+  right: 10px;
+  color: #888;
+  cursor: pointer;
+}
+
+.check-edit:hover {
+  color: #0070d2;
 }
 
 .input-with-icon .edit-icon:hover {
