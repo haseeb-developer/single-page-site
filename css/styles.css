@@ -231,11 +231,16 @@ header {
   cursor: pointer;
   font-weight: 500;
   gap: 10px;
+  font-size: 11px;
   letter-spacing: 0.1px;
   background-color: transparent;
   align-items: center;
   transition: .3s ease-in-out;
-  padding: 14px 20px;
+  padding: 14px 15px;
+}
+
+.dropdown-bar ul li .active {
+  font-size: 15px;
 }
 
 .dropdown-bar ul li:nth-child(1) {
@@ -333,6 +338,7 @@ header {
 
 .group-cms-btns .cms-btn2 {
   border: 1px solid #ddd;
+  color: #333;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -433,8 +439,9 @@ header {
 }
 
 .status-item p {
-  color: #444;
+  color: #555;
   font-weight: 500;
+  font-size: 15px;
 }
 
 .status-item a {
@@ -449,6 +456,15 @@ header {
 .breadcrumbs-container {
   padding: 15px 0;
 }
+
+.truncate {
+  white-space: nowrap;       
+  text-overflow: ellipsis;  
+  display: inline-block;  
+  max-width: 150px;       
+  vertical-align: middle;    
+}
+
 
 .breadcrumbs {
   border: 1px solid #cbd2d9;
@@ -555,7 +571,7 @@ header {
   gap: 10px;
   border-radius: 7px;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 10px 13px;
   transition: .3s ease-in-out;
 }
 
