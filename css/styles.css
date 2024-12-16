@@ -565,7 +565,7 @@ header {
 }
 
 .breadcrumbs__item {
-  background: var(--color-1);
+  background: #ebe9e7;
   color: #333;
   outline: none;
   padding: 10px 25px;
@@ -576,7 +576,7 @@ header {
 
 .breadcrumbs__item:hover:after,
 .breadcrumbs__item:hover {
-  background: #a7cbf0;
+  background: #a292ff;
 }
 
 .breadcrumbs__item:focus:after,
@@ -599,7 +599,7 @@ header {
 
 .breadcrumbs__item:after,
 .breadcrumbs__item:before {
-  background: white;
+  background: #ebe9e7;
   bottom: 0;
   clip-path: polygon(100% 49%, -100% -55%, 0 110%);
   content: "";
